@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roman Brant</title>
+    <style>
+        header {
+            background-color: #333333f8;
+            color: #fff;
+            text-align: center;
+            padding: 50px;
+            height: 100%;
+            position: fixed;
+            left: 50px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            letter-spacing: 2px;
+            font-weight: 800;
+        }
+
+        .profile-photo {
+            margin: 15px 0px 0px 0px;
+            border-radius: 50%;
+            width: 170px;
+            height: 170px;
+            object-fit: cover;
+        }
+
+        .links {
+            margin: 20px 0px 0px 0px;
+        }
+
+        .link-block {
+            padding: 10px 20px;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            letter-spacing: 1px;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            line-height: 1.42857143;
+            font-size: 14px;
+            background-image: url('https://foni.club/uploads/posts/2023-02/1675399327_foni-club-p-fon-pravilnii-zadnii-7.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        main {
+            width: 800px;
+            margin: 20px 0px 20px 350px;
+            padding: 4rem;
+            background-color: #fffffff6;
+            border-radius: 5px;
+        }
+
+        h2 {
+            color: #f03e3e;
+            letter-spacing: 2px;
+            font-weight: 800;
+        }
+
+        .skills {
+            margin-top: 20px;
+        }
+
+        .skill {
+            margin: 10px 0;
+        }
+
+        .skill-name {
+            font-weight: 600;
+        }
+
+        .skill-percent {
+            text-align: right;
+            opacity: 0.6;
+        }
+
+        .skill-progress {
+            background-color: #f3f3f3;
+            border-radius: 5px;
+            height: 5px;
+            margin-top: 5px;
+            position: relative;
+        }
+
+        .progress-bar1, .progress-bar2, .progress-bar3, .progress-bar4{
+            background-color: #f03e3e;
+            border-radius: 5px;
+            height: 100%;
+        }
+
+        .progress-bar1 {
+            animation: progress-bar1 2s ease-out forwards;
+        }
+        .progress-bar2 {
+            animation: progress-bar2 2s ease-out forwards;
+        }
+        .progress-bar3 {
+            animation: progress-bar3 2s ease-out forwards;
+        }
+        .progress-bar4 {
+            animation: progress-bar4 2s ease-out forwards;
+        }
+
+        @keyframes progress-bar1 {from {width: 0;}to {width: 80%;}}
+        @keyframes progress-bar2 {from {width: 0;}to {width: 70%;}}
+        @keyframes progress-bar3 {from {width: 0;}to {width: 40%;}}
+        @keyframes progress-bar4 {from {width: 0;}to {width: 75%;}}
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            transition: color 0.3s;
+        }
+
+            a:hover {
+                color: #ffcc00;
+            }
+
+        .link {
+            text-decoration: none;
+            color: #c37b1e;
+        }
+
+        section {
+            margin: 1rem 0;
+        }
+
+        b {
+            font-weight: 800;
+        }
+
+        hr {
+            width: 926px;
+            margin: 40px 0px 40px -64px;
+            opacity: 0.2;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img class="profile-photo" src="D:\Навчання\Програмування\photo_2023-10-20_20-15-31.jpg">
+        <h1>Roman Brant</h1>
+        <p>Student</p>
+        <br>
+        <a href="https://www.instagram.com/brant_cocx/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/768px-Instagram_logo_2016.svg.png" width="30" height="30"></a>
+        <a href="https://www.facebook.com/profile.php?id=100028624745347" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Facebook_logo_%28square%29.png/800px-Facebook_logo_%28square%29.png" width="30" height="30"></a>
+        <br><br><br><br><br>
+                <div class="links">
+                    <div class="link-block"><a href="javascript:void(0);" onclick="scrollToSection('about')">ABOUT ME</a></div>
+                    <div class="link-block"><a href="javascript:void(0);" onclick="scrollToSection('education')">EDUCATION</a></div>
+                    <div class="link-block"><a href="javascript:void(0);" onclick="scrollToSection('other-sites')">MY OTHER SITES</a></div>
+                    <div class="link-block"><a href="javascript:void(0);" onclick="scrollToSection('downloads')">DOWNLOADS</a></div>
+                    <script>
+                        function scrollToSection(sectionId) {
+                            const section = document.getElementById(sectionId);
+                            const yOffset = -40; 
+                            const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                            window.scrollTo({ top: y, behavior: 'smooth' });
+                        }
+                    </script>
+                </div>
+    </header>
+    <main>
+        <section id="about">
+            <h2>ABOUT ME</h2>
+            <br>
+            <p>Hello, My name is Roman Brant.</p>
+            <br>
+            <p><b>Birthday:</b> April 12, 2005</p>
+            <p><b>Location:</b> Rivne, Ukraine</p>
+            <p><b>Email:</b> <a class="link" href="https://mail.google.com/mail/u/0/#sent?compose=DmwnWsCPcKdXvGMWVJQxMrDmLFGMKfXkPCzfHZhsmPPdmxZfmxWGNdFpZbtxRDbplHzrXXhfFzZl" target="_blank">brantroma12@gmail.com</a></p>
+            <p><b>Phone:</b> +380 (68) 022 60 34</p>
+            <br>
+            <div class="skills">
+                <div class="skill">
+                    <div class="skill-name">Photoshop</div>
+                    <div class="skill-progress">
+                        <div class="progress-bar1"></div>
+                    </div>
+                    <div class="skill-percent">80%</div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">Sony Vegas</div>
+                    <div class="skill-progress">
+                        <div class="progress-bar2"></div>
+                    </div>
+                    <div class="skill-percent">70%</div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">English</div>
+                    <div class="skill-progress">
+                        <div class="progress-bar3"></div>
+                    </div>
+                    <div class="skill-percent">Pre-Intermediate</div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">Premiere</div>
+                    <div class="skill-progress">
+                        <div class="progress-bar4"></div>
+                    </div>
+                    <div class="skill-percent">75%</div>
+                </div>
+            </div>
+            <hr>
+        </section>
+        <section id="education">
+            <h2>EDUCATION</h2>
+            <p><b>Bachelor Of Cyber security</b></p>
+            <p>In progress - <a class="link" href="https://iszzi.kpi.ua/" target="_blank">ISCIP Igor Sikorsky Kyiv Polytechnic Institute</a></p>
+            <p><b>Сomplete secondary education</b></p>
+            <p>July, 2022 - <a class="link" href="http://nvk12.rv.ua/" target="_blank">Rivne Lyceum №12 of Rivne City Council</a></p>
+            <hr>
+        </section>
+        <section id="other-sites">
+            <h2>MY OTHER SITES</h2>
+            <p>You can visit my other sites at the following links:</p>
+            <ul>
+                <li><a class="link" href="https://c21-02.github.io/index/" target="_blank">index</a></li>
+                <li><a class="link" href="https://c21-02.github.io/timetable/" target="_blank">timetable</a></li>
+                <li><a class="link" href="https://c21-02.github.io/background/" target="_blank">background</a></li>
+                <li><a class="link" href="https://c21-02.github.io/2.6-nav/" target="_blank">nav</a></li>
+                <li><a class="link" href="https://c21-02.github.io/position/" target="_blank">position</a></li>
+                <li><a class="link" href="https://c21-02.github.io/form/" target="_blank">form</a></li>
+                <li><a class="link" href="https://c21-02.github.io/CSS/" target="_blank">CSS</a></li>
+                <li><a class="link" href="https://c21-02.github.io/table/" target="_blank">table</a></li>
+            </ul>
+            <hr>
+        </section>
+        <section id="downloads">
+            <h2>DOWNLOADS</h2>
+            <p>OS (iso):</p>  
+            <ul>
+                <li><a class="link" href="https://uk-ua_windows_10_consumer_editions_version_22h2_x64_dvd_0afe1fa6.iso" download>Windows 10 x64</a></li>
+                <li><a class="link" href="https://uk-ua_windows_10_consumer_editions_version_22h2_x86_dvd_5eca6422.iso" download>Windows 10 x32</a></li>
+                <li><a class="link" href="https://uk-ua_windows_11_consumer_editions_version_22h2_x64_dvd_35a0bc7f.iso" download>Windows 11 x64</a></li>
+            </ul>
+            <p>Soft:</p>
+            <ul>
+                <li><a class="link" href="https://install/Office/Office2016.zip" download>Office 2016</a></li>
+                <li><a class="link" href="https://install/Office/Office2021.iso" download>Office 2021</a></li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
