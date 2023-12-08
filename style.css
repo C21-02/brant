@@ -82,66 +82,37 @@ h2 {
     position: relative;
 }
 
-.progress-bar1, .progress-bar2, .progress-bar3, .progress-bar4 {
+.progress-bar {
     background-color: #f03e3e;
     border-radius: 5px;
     height: 100%;
+    animation: progress-animation 2s ease-out forwards;
+}
+
+@keyframes progress-animation {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: var(--progress-width, 0);
+    }
 }
 
 .progress-bar1 {
-    animation: progress-bar1 2s ease-out forwards;
+    --progress-width: 80%;
 }
 
 .progress-bar2 {
-    animation: progress-bar2 2s ease-out forwards;
+    --progress-width: 70%;
 }
 
 .progress-bar3 {
-    animation: progress-bar3 2s ease-out forwards;
+    --progress-width: 40%;
 }
 
 .progress-bar4 {
-    animation: progress-bar4 2s ease-out forwards;
-}
-
-@keyframes progress-bar1 {
-    from {
-        width: 0;
-    }
-
-    to {
-        width: 80%;
-    }
-}
-
-@keyframes progress-bar2 {
-    from {
-        width: 0;
-    }
-
-    to {
-        width: 70%;
-    }
-}
-
-@keyframes progress-bar3 {
-    from {
-        width: 0;
-    }
-
-    to {
-        width: 40%;
-    }
-}
-
-@keyframes progress-bar4 {
-    from {
-        width: 0;
-    }
-
-    to {
-        width: 75%;
-    }
+    --progress-width: 75%;
 }
 
 a {
