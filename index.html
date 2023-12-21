@@ -12,14 +12,17 @@
     <header>
         <img class="profile-photo" src="photo_2023-10-20_20-15-31.jpg">
         <h1>Roman Brant</h1>
+        <div id="currentDateContainer"></div>
         <script>
-        function displayCurrentDate() {
+    function displayCurrentDate() {
         const currentDate = new Date();
         const formattedDate = `${currentDate.getDate()}.${currentDate.getMonth() + 1}.${currentDate.getFullYear()}`;
         return formattedDate;
-        }
-        document.getElement.innerHTML = `<p>${displayCurrentDate()}</p>`;
-        </script>
+    }
+
+    const currentDateContainer = document.getElementById('currentDateContainer');
+    currentDateContainer.innerHTML = `<p>${displayCurrentDate()}</p>`;
+</script>
         <p>Student</p>
         <br>
         <a href="https://www.instagram.com/brant_cocx/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/768px-Instagram_logo_2016.svg.png" width="30" height="30"></a>
