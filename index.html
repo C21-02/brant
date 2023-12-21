@@ -7,7 +7,7 @@
     <script>
         function displayCurrentDate() {
     const currentDate = new Date();
-    const formattedDate = `${currentDate.getDate()}.${currentDate.getMonth() + 1}.${currentDate.getFullYear()} ${currentDate.getHours()}:${currentDate.getMinutes()}`;
+    const formattedDate = `${currentDate.getDate()}.${currentDate.getMonth() + 1}.${currentDate.getFullYear()}`;
     return formattedDate;
 }
         document.getElementById("output").innerHTML = `
